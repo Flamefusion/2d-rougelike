@@ -552,9 +552,16 @@ script = ExtResource("1_hq5if")
 
 [node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
 sprite_frames = SubResource("SpriteFrames_6nr3t")
-animation = &"nw-walk"
-frame_progress = 0.96205
+animation = &"idle"
+frame_progress = 0.476019
 
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2(0, 3)
 shape = SubResource("CircleShape2D_5ppdy")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+zoom = Vector2(2.5, 2.5)
+limit_left = -592
+limit_top = -191
+limit_right = 471
+limit_bottom = 390
